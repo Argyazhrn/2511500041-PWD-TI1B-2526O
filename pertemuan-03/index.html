@@ -123,6 +123,19 @@
           padding-right: 16px;
           flex-shrink: 0;
         }
+
+        @media (max-width: 600px) {
+          #contact p {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          #about strong {
+            text-align: left;
+            padding-right: 0;
+            margin-bottom: 2px;
+          }
+        }
       </style>
       <form action="" method="GET">
         <label for="txtNama">Nama:</label>
