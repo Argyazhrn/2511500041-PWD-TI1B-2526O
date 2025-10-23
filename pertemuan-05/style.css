@@ -81,7 +81,7 @@ header li a {
             transform: translateY(1px);
         }
 
-        menu-toggle {
+        .menu-toggle {
           display: none;
           background: none;
           border: none;
