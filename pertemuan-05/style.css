@@ -98,7 +98,15 @@ header li a {
             left: 16px;
             top: 8px
           }
-          
+
+          nav {
+            display: none;
+            flex-direction: column;
+            background: #003366;
+            width: 100%;
+            position: 5px 0;
+          }
+
             header {
                 padding: 16px;
                 position: sticky;
