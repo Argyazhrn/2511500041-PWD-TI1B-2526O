@@ -9,12 +9,12 @@ document.getElementById("menuToggle").addEventListener("click", function () {
     }
 });
 
-document.querySelector("form"). addEventListener("submit", function (e){
+document.querySelector("form").addEventListener("submit", function (e){
     const nama = document.getElementById("txtNama");
     const email = document.getElementById("txtEmail");
     const pesan = document.getElementById("txtPesan")
 
-    document,this.querySelectorAll(".error-msg").forEach(eL => eL.remove());
+    document.querySelectorAll(".error-msg").forEach(eL => eL.remove());
     [nama, email, pesan].forEach(eL => eL.style.border = "");
 
     let isValid = true;
@@ -22,13 +22,12 @@ document.querySelector("form"). addEventListener("submit", function (e){
     if (nama.value.trim(). lenght < 3) {
         showError(nama, "Nama minimal 3 haruf dqan tidak boleh kosong.");
         isValid = false;
-
     } else if (!/^[A-Za-z\s]+$/.test(nama.value)) {
         showError(nama, "Nama hanya boleh berisi huruf dan spasi.");
     }
 
-    if (email.value.trim()=== "") {
-        shoError(email, "Email wajaib diisi.");
+    if (email.value.trim() === "") {
+        showError(email, "Email wajib diisi.");
         isValid = false;
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
         showError(email, "Format email tidak valid, Contoh: nama@mail.com");
@@ -65,7 +64,7 @@ function showError(inputElement, message) {
     small.dataset.forId = inputElement.id;
 
     if (inputElement.nextSibling) {
-        label.insertBefore(small, inputElement. nextSibling);
+        label.insertBefore(small, inputElement.nextSibling);
     } else {
         label.appendChild(small);
     }
@@ -96,7 +95,7 @@ function alignErrorMessage(smaLLEL, inputEL) {
 
 window.addEventListener("resize", () => {
     Document.querySelectorAll(".error-msg").forEach(small => {
-        const targer = document.getElementById(small.dataset.forId);
+        const target = document.getElementById(small.dataset.forId);
         if (target) alignErrorMessage(smaLL, target); 
     });
 });
