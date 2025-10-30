@@ -7,4 +7,6 @@ nim 2511500041<br>
 belajar:<br>
 <ol>
 <li>eco di index.php</li>
+<li>copy index.html, style.css, script.js (pertemuan-05)</li>
+<li>copy index.html dan rename hasil copy le index.php</li>
 </ol>
