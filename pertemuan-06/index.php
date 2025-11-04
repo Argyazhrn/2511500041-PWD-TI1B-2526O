@@ -42,6 +42,7 @@
     $Nama_Ibu         = "Reni Nurhayati"
     $Nama_Kakak       = "Arya Putra Purnama Sodikin"
     $Nama_Adik        = "Nasya Lovelia Putri Sodikin"
+    ?>
 
     <section id="about">
       <h2>About Argya Zahran Dwiputra Sodikin</h2>
