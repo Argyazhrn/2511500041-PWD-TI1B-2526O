@@ -181,8 +181,8 @@ header li a:active {
 }
 
 #ipk h2 {
-  color: #00ff40;
-  border-bottom: 2px solid #07fd82;
+  color: #00ff2a;
+  border-bottom: 2px solid #07fd30;
   padding-bottom: 6px;
   margin-top: 0;
   margin-bottom: 16px;
@@ -194,12 +194,12 @@ header li a:active {
   align-items: baseline;
   margin: 0;
   padding: 6px 0;
-  border-bottom: 1px solid #15f846;
+  border-bottom: 1px solid #adffbf;
 }
 
 #ipk strong {
   min-width: 180px;
-  color: #06ff45;
+  color: #ff9b06;
   font-weight: 600;
   text-align: right;
   padding-right: 16px;
@@ -208,7 +208,7 @@ header li a:active {
 
 #ipk span {
   flex: 1;
-  color: #15f846;
+  color: #00ff40;
 }
 
 
