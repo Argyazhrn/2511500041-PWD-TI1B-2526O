@@ -25,20 +25,36 @@
     <section id="home">
       <h2>Selamat Datang</h2>
       <p>Ini contoh paragraf HTML.</p>
+      <?php
+      echo "<p>Halo Dunia</p>",
+      echo "<p>Nama saya Argya Zahran Dwiputra Sodikin</p>",
+      ?>
     </section>
+
+    <?php
+    $NIM              = "2511500041"
+    $Nama             = "Argya Zahran Dwiputra Sodikin"
+    $Tempat_Lahir     = "Bandung"
+    $Tanggal_Lahir    = "18 Agustus 2006"
+    $Pekerjaan        = "Mahasiswa"
+    $Pasangan         = "Tidak ada"
+    $Nama_Ayah        = "Ace Sodikin"
+    $Nama_Ibu         = "Reni Nurhayati"
+    $Nama_Kakak       = "Arya Putra Purnama Sodikin"
+    $Nama_Adik        = "Nasya Lovelia Putri Sodikin"
 
     <section id="about">
       <h2>About Argya Zahran Dwiputra Sodikin</h2>
-      <p><strong>NIM:</strong> 2511500041</p>
-      <p><strong>Nama:</strong> Argya Zahran Dwiputra Sodikin</p>
-      <p><strong>Tempat Lahir:</strong> Bandung</p>
-      <p><strong>Tanggal Lahir:</strong> 18 Agustus 2006</p>
-      <p><strong>Pekerjaan:</strong> Mahasiswa</p>
-      <p><strong>Pasangan:</strong> Tidak ada &times;</p>
-      <p><strong>Nama Ayah:</strong> Ace Sodikin</p>
-      <p><strong>Nama Ibu:</strong> Reni Nurhayati</p>
-      <p><strong>Nama Kakak:</strong> Arya Putra Purnama Sodikin</p>
-      <p><strong>Nama Adik:</strong> Nasya Lovelia Putri Sodikin &#128512;</p>
+      <p><strong>NIM:</strong> <?php echo $NIM; ?></p>
+      <p><strong>Nama:</strong> <?php echo $Nama; ?></p>
+      <p><strong>Tempat Lahir:</strong> <?php echo $Tempat_Lahir; ?></p>
+      <p><strong>Tanggal Lahir:</strong> <?php echo $Tanggal_Lahir; ?></p>
+      <p><strong>Pekerjaan:</strong> <?php echo $Pekerjaan; ?></p>
+      <p><strong>Pasangan:</strong> <?php echo $Pasangan &times; ?></p>
+      <p><strong>Nama Ayah:</strong> <?php echo $Nama_Ayah; ?></p>
+      <p><strong>Nama Ibu:</strong> <?php echo $Nama_Ibu; ?></p>
+      <p><strong>Nama Kakak:</strong> <?php echo $Nama_Kakak; ?></p>
+      <p><strong>Nama Adik:</strong> <?php echo $Nama_Adik; &#128512; ?></p>
     </section>
 
     <section id="contact">
