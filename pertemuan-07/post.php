@@ -1,6 +1,9 @@
 <?php
  session_start();
- $sesnama = $_SESSION["nama"];
+ $sesnama = "";
+ if (isset ($_SESSION["nama"])):
+  $sesnama = $_SESSION["nama"];
+ endif;
  $sesemail = $_SESSION["Email"];
  $sespesan = $_SESSION["Pesan"]
 ?>
@@ -89,9 +92,9 @@
         <button type="reset">Batal</button>
       </form>
       <p>Terima kasih sudah menghubungi kami</p>
-      <label>>Nama: <strong><?php echo $sesnama; ?></strong></label>
-      <label>>Email: <strong><?php echo $sesemail; ?></strong></label>
-      <label>>Pesan: <strong><?php echo $sespesan; ?></strong></label>
+      <label>Nama: <strong><?php echo $sesnama; ?></strong></label>
+      <label>Email: <strong><?php echo $sesemail; ?></strong></label>
+      <label>Pesan: <strong><?php echo $sespesan; ?></strong></label>
     </section>
   </main>
 

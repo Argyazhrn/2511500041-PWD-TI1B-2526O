@@ -89,9 +89,9 @@
         <button type="reset">Batal</button>
       </form>
       <p>Terima kasih sudah menghubungi kami</p>
-      <label>>Nama: <strong><?php echo $sesnama; ?></strong></label>
-      <label>>Email: <strong><?php echo $sesemail; ?></strong></label>
-      <label>>Pesan: <strong><?php echo $sespesan; ?></strong></label>
+      <label>Nama: <strong><?php echo $sesnama; ?></strong></label>
+      <label>Email: <strong><?php echo $sesemail; ?></strong></label>
+      <label>Pesan: <strong><?php echo $sespesan; ?></strong></label>
     </section>
   </main>
 
