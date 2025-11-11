@@ -69,7 +69,7 @@
 
     <section id="contact">
       <h2>Kontak Kami</h2>
-      <form action="get_proses.php" method="GET">
+      <form action="post_proses.php" method="POST">
 
         <label for="txtNama"><span>Nama:</span>
           <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
