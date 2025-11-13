@@ -54,7 +54,7 @@ endif;
 
     <section id="Entry Data Mahasiswa">
       <h2>Entry Data Mahasiswa</h2>
-      <form id="Entry Data Mahasiswa" action="proses.php" method="POST">
+      <form id="Entry Data Mahasiswa" action="index.php" method="INDEX">
 
         <label for="txtNim"><span>Nama:</span>
           <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan nim" required autocomplete="nim">
@@ -98,7 +98,7 @@ endif;
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
       </form>
-      
+
     </section>
 
     <section id="about">
