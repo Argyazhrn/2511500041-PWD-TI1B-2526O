@@ -61,8 +61,8 @@ header li a:active {
 
 #home,
 #about,
-#contact
-#EntryDataMahasiswa{
+#contact,
+#EntryDataMahasiswa {
 
   background-color: #ffffff;
   border-radius: 10px;
@@ -74,8 +74,8 @@ header li a:active {
 
 #home h2,
 #about h2,
-#contact h2 
-#EntryDataMahasiswa h2{
+#contact h2 ,
+#EntryDataMahasiswa h2  {
   color: #003366;
   border-bottom: 2px solid #003366;
   padding-bottom: 6px;
@@ -88,7 +88,8 @@ header li a:active {
 }
 
 #about p,
-#contact label {
+#contact label,
+#EntryDataMahasiswa label {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -98,7 +99,8 @@ header li a:active {
 }
 
 #about strong,
-#contact label>span {
+#contact label>span,
+#EntryDataMahasiswa label>span {
   min-width: 180px;
   color: #003366;
   font-weight: 600;
@@ -109,7 +111,9 @@ header li a:active {
 
 
 #contact input,
-#contact textarea {
+#contact textarea,
+#EntryDataMahasiswa input,
+#EntryDataMahasiswa textarea {
   flex: 1;
   border: 1px solid #ccc;
   border-radius: 6px;
@@ -119,6 +123,7 @@ header li a:active {
   margin: 0;
   box-sizing: border-box;
 }
+
 #entryDataMahasiswa button,
 #contact button {
   margin-top: 10px;

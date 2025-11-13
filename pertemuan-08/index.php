@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 $sesnama = "";
 if (isset($_SESSION["sesnama"])):
   $sesnama = $_SESSION["sesnama"];
@@ -56,8 +55,21 @@ endif;
       <h2>Entry Data Mahasiswa</h2>
       <form id="Entry Data Mahasiswa" action="index.php" method="INDEX">
 
-        <label for="txtNim"><span>Nama:</span>
-          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan nim" required autocomplete="nim">
+      <?php
+      $NIM            = "2511500041";
+      $Nama           = "Argya Zahran Dwiputra Sodikin";
+      $Tempat_Lahir   = "Bandung";
+      $Tanggal_Lahir  = "18 Agustus 2006";
+      $Pekerjaan      = "Mahasiswa";
+      $Pasangan       = "Tidak ada";
+      $Nama_Ayah      = "Ace Sodikin";
+      $Nama_Ibu       = "Reni Nurhayati";
+      $Nama_Kakak     = "Arya Putra Purnama Sodikin";
+      $Nama_Adik      = "Nasya Lovelia Putri Sodikin";
+    ?>
+
+        <label for="txtNIM"><span>Nama:</span>
+          <input type="text" id="txtNIM" name="txtNIM" placeholder="Masukkan nim" required autocomplete="nim">
         </label>
 
         <label for="txtNama lengkap"><span>Nama lengkap:</span>
