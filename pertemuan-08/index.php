@@ -64,11 +64,41 @@ endif;
           <input type="nama lengkap" id="txtNama Lengkap" name="txtNama Lengkap" placeholder="Masukkan Nama Lengkap" required autocomplete="nama lengkap">
         </label>
 
-        <label for="txtPesan"><span>Pesan Anda:</span>
-          <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
-          <small id="charCount">0/200 karakter</small>
+        <label for="txtTempat Lahir"><span>Tempat Lahir:</span>
+          <input id="txtTempat Lahir" name="txttempat Lahir" rows="4" placeholder="Masukan Tempat Lahir" required>
         </label>
 
+        <label for="txtTanggal Lahir"><span>Tanggal Lahir:</span>
+          <input id="txtTanggal Lahir" name="txttanggal Lahir" rows="4" placeholder="Masukan Tanggal Lahir" required>
+        </label>
+
+        <label for="txtHobi"><span>Hobi:</span>
+          <input id="txtHobi" name="txtHobi" rows="4" placeholder="Masukan Hobi" required>
+        </label>
+
+        <label for="txtPasangan"><span>Pasangan:</span>
+          <input id="txtPasangan" name="txtPasangan" rows="4" placeholder="Masukan Pasangan" required>
+        </label>
+
+        <label for="txtPekerjaan"><span>Pekerjaan:</span>
+          <input id="txtPekerjaan" name="txtPekerjaan" rows="4" placeholder="Masukan Pekerjaan" required>
+
+        <label for="txtNama Orang Tua"><span>Nama Orang Tua:</span>
+          <input id="txtNama Orang Tua" name="txtNama Orang Tua" rows="4" placeholder="Masukan Nama Orang Tua" required>
+        </label>
+
+        <label for="txtNama Kakak"><span>Nama Kakak:</span>
+          <input id="txtNama Kakak" name="txtNama Kakak" rows="4" placeholder="Masukan Nama Kakak" required>
+        </label>
+        
+        <label for="txtNama Adik"><span>Nama Adik:</span>
+          <input id="txtNama Adik" name="txtNama Adik" rows="4" placeholder="Masukan Nama Adik" required>
+        </label>
+
+        <button type="submit">Kirim</button>
+        <button type="reset">Batal</button>
+      </form>
+      
     </section>
 
     <section id="about">

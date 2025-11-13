@@ -9,4 +9,5 @@ Kelompok: TI1A<br>
 Proses saya mengerjakan UTS ini sebagai berikut:<br>
 <ol>
   <li>copy semua file dari elerning (punya dosen) untuk latihan pertemuan-08</li>
+  <li>menambahkan NIM, Nama Lengkap, Tempat Lahir, Tanggal Lahir, Hobi, Pasangan, Pekerjaan, Nama Orang Tua, Nama Kakak, dan Nama Adik. Tombol Kirim dan Batal pada form entry mahasiswa<li>
 </ol>
