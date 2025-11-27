@@ -17,4 +17,5 @@
   <li>menghapus kode baris 19-67</li>
   <li>menambahkan kode foreach setelah baris h2</li>
   <li>menghapus kode barisan 130-140</li>
+  <li>membuat file fungsi.php di pertemuan 09</li>
 </ol>
