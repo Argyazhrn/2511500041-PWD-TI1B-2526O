@@ -13,4 +13,5 @@
   <li>echo session ke nilai label section contact selesai</li>
 
   <li>mengubah kode baris 10-19 menjadi bentuk array associative</li>
+  <li>mengubah kode baris 23-32</li>
 </ol>
