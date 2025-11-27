@@ -20,4 +20,5 @@
   <li>membuat file fungsi.php di pertemuan 09</li>
   <li>menambahkan kode tanggal bulan tahun di fungsi.php</li>
   <li>menambahkan kode untuk output biodata</li>
+  <li>mengubah kode baris 123-129</li>
 </ol>
