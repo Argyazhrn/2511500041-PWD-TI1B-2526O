@@ -18,4 +18,6 @@
   <li>menambahkan kode foreach setelah baris h2</li>
   <li>menghapus kode barisan 130-140</li>
   <li>membuat file fungsi.php di pertemuan 09</li>
+  <li>menambahkan kode tanggal bulan tahun di fungsi.php</li>
+  <li>menambahkan kode untuk output biodata</li>
 </ol>
