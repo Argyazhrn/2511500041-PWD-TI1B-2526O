@@ -10,4 +10,5 @@ nim 2511500041<br>
 <li>menambahkan kode MySQL di phpMyAdmin</li>
 <li>membuat file read.php dan menambahkan kode</li>
 <li>menambahkan insert untuk tbl_tamu</li>
+<li>meng copy file read.php dan ubah menjadi read_inc.php dan mengubah kode read.php</li>
 </ol>
