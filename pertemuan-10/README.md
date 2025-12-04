@@ -4,6 +4,7 @@ saya argya zahran dwiputra sodikin<br>
 nim 2511500041<br>
 
 <ol>
-<li> meng extract bahan ke pertemuan 10</li>
-<li> mmembuat file koneksi.php dan menambahkan kode</li>
+<li>meng extract bahan ke pertemuan 10</li>
+<li>mmembuat file koneksi.php dan menambahkan kode</li>
+<li>mengextarct bahan myadmin ke file laragon dan membuat database di phpmyadmin</li>
 </ol>
