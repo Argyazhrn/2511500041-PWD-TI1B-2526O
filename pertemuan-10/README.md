@@ -12,4 +12,5 @@ nim 2511500041<br>
 <li>menambahkan insert untuk tbl_tamu</li>
 <li>meng copy file read.php dan ubah menjadi read_inc.php dan mengubah kode read.php</li>
 <li>mengubah kode barisan 146 pada index.php</li>
+<li>menghapus barisan 133-141 di index.php</li>
 </ol>
