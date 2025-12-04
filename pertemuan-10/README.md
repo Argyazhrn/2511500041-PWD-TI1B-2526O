@@ -8,4 +8,5 @@ nim 2511500041<br>
 <li>mmembuat file koneksi.php dan menambahkan kode</li>
 <li>mengextarct bahan myadmin ke file laragon dan membuat database di phpmyadmin</li>
 <li>menambahkan kode MySQL di phpMyAdmin</li>
+<li>membuat file read.php dan menambahkan kode</li>
 </ol>
