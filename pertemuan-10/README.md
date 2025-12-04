@@ -5,4 +5,5 @@ nim 2511500041<br>
 
 <ol>
 <li> meng extract bahan ke pertemuan 10</li>
+<li> mmembuat file koneksi.php dan menambahkan kode</li>
 </ol>
