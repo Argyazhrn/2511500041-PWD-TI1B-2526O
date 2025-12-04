@@ -9,4 +9,5 @@ nim 2511500041<br>
 <li>mengextarct bahan myadmin ke file laragon dan membuat database di phpmyadmin</li>
 <li>menambahkan kode MySQL di phpMyAdmin</li>
 <li>membuat file read.php dan menambahkan kode</li>
+<li>menambahkan insert untuk tbl_tamu</li>
 </ol>
