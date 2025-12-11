@@ -6,4 +6,5 @@ nim 2511500041<br>
 
 <ol>
   <li>mengcopy hasil pertemuan-10 ke pertemuan-11</li>
+  <li>latihan inti telah selesai</li>
 </ol>
