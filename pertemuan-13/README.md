@@ -10,4 +10,5 @@ nim 2511500041<br>
 <li>menambah link delete untuk ke file proses_delete.php</li>
 <li>copy isi proses_update ke proses_delete</li>
 <li>menyesuaikan kode di proses_delete untuk proses hapus</li>
+<li>menambahkan parameter cid untuk link delete di read.php</li>
 </ol>
