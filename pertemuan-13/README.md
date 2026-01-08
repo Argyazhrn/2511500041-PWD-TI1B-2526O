@@ -9,4 +9,5 @@ nim 2511500041<br>
 <li>import sql dibahan ajar 13</li>
 <li>menambah link delete untuk ke file proses_delete.php</li>
 <li>copy isi proses_update ke proses_delete</li>
+<li>menyesuaikan kode di proses_delete untuk proses hapus</li>
 </ol>
