@@ -16,7 +16,7 @@
 
   if (!$cid) {
     $_SESSION['flash_error'] = 'CID Tidak Valid.';
-    redirect_ke('edit.php?cid='. (int)$cid);
+    redirect_ke('edit_biodata_sang_mahasiswa.php?cid='. (int)$cid);
   }
 
    #ambil dan bersihkan (sanitasi) nilai dari form
@@ -132,7 +132,7 @@ if (!empty($errors)) {
   ];
 
   $_SESSION['flash_error'] = implode('<br>', $errors);
-  redirect_ke('edit_biodata.php?cid=' . (int)$cid);
+  redirect_ke('edit_biodata_sang_mahasiswa.php?cid=' . (int)$cid);
 }
 
  #menyiapkan query UPDATE dengan prepared statement 
@@ -143,7 +143,7 @@ if (!empty($errors)) {
 if (!$stmt) {
     #jika gagal prepare, kirim pesan error (tanpa detail sensitif)
     $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
-    redirect_ke('edit.php?cid='. (int)$cid);
+    redirect_ke('edit_biodata_sang_mahasiswa.php?cid='. (int)$cid);
   }
 
   #bind parameter dan eksekusi (s = string, i = integer)
@@ -170,7 +170,7 @@ if (!$stmt) {
   ];
 
   $_SESSION['flash_error'] = 'Data gagal diperbaharui. Silakan coba lagi.';
-    redirect_ke('edit.php?cid='. (int)$cid);
+    redirect_ke('edit_biodata_sang_mahasiswa.php?cid='. (int)$cid);
   }
 
   mysqli_stmt_close($stmt);
