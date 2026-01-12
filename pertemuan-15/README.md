@@ -6,4 +6,5 @@ nim 2511500041<br>
 
 <ol>
 <li>mengcopy bahan ajar ke pertemuan-15</li> 
+<li>membuat tabel baru di phpMyAdmin<li>
 </ol>
