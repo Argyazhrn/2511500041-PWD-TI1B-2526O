@@ -1,20 +1,17 @@
 <?php
-  session_start();
-  require 'koneksi.php';
-  require 'fungsi.php';
+session_start();
+require 'koneksi.php';
+require 'fungsi.php';
 
-  $sql = "SELECT * FROM biodata_sang_mahasiswa ORDER BY cid DESC";
-  $q = mysqli_query($conn, $sql);
-  if (!$q) {
+$sql = "SELECT * FROM biodata_sang_mahasiswa ORDER BY cid DESC";
+$q   = mysqli_query($conn, $sql);
+if (!$q) {
     die("Query error: " . mysqli_error($conn));
-  }
-?>
+}
 
-<?php
-  $flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
-  $flash_error  = $_SESSION['flash_error'] ?? ''; #jika ada error
-  #bersihkan session ini
-  unset($_SESSION['flash_sukses'], $_SESSION['flash_error']); 
+$flash_sukses = $_SESSION['flash_sukses'] ?? ''; // jika query sukses
+$flash_error  = $_SESSION['flash_error']  ?? ''; // jika ada error
+unset($_SESSION['flash_sukses'], $_SESSION['flash_error']); 
 ?>
 
 <?php if (!empty($flash_sukses)): ?>
@@ -23,6 +20,7 @@
           <?= $flash_sukses; ?>
         </div>
 <?php endif; ?>
+
 
 <?php if (!empty($flash_error)): ?>
         <div style="padding:10px; margin-bottom:10px; 
@@ -55,7 +53,8 @@
       <td><?= $i++ ?></td>
       <td>
         <a href="edit_biodata_sang_mahasiswa.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
-        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['cnama']); ?>?')" href="delete_biodata_sang_mahasiswa.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
+        <a onclick="return confirm('Hapus <?= htmlspecialchars($row['nama_lengkap']); ?>?')"
+           href="delete_biodata_sang_mahasiswa.php?cid=<?= (int)$row['cid']; ?>">Delete</a>
       </td>
       <td><?= $row['cid']; ?></td>
       <td><?= htmlspecialchars($row['nim']); ?></td>
@@ -68,7 +67,7 @@
       <td><?= htmlspecialchars($row['nama_orang_tua']); ?></td>
       <td><?= htmlspecialchars($row['nama_kakak']); ?></td>
       <td><?= htmlspecialchars($row['nama_adik']); ?></td>
-      <td><?= formatTanggal(htmlspecialchars($row['created_at'])); ?></td>
+      <td><?= formatTanggal($row['created_at'] ?? ''); ?></td>
     </tr>
   <?php endwhile; ?>
 </table>

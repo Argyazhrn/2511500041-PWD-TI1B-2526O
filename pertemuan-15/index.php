@@ -43,7 +43,7 @@ require_once __DIR__ . '/fungsi.php';
       <form action="proses.php" method="POST">
 
         <label for="txtNim"><span>NIM:</span>
-          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required>
+          <input type="text" id="txtnim" name="txtnim" placeholder="Masukkan NIM" required>
         </label>
 
         <label for="txtnama_lengkap"><span>Nama Lengkap:</span>
@@ -59,11 +59,11 @@ require_once __DIR__ . '/fungsi.php';
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
-          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi" required>
+          <input type="text" id="txthobi" name="txthobi" placeholder="Masukkan Hobi" required>
         </label>
 
         <label for="txtPasangan"><span>Pasangan:</span>
-          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan" required>
+          <input type="text" id="txtpasangan" name="txtpasangan" placeholder="Masukkan Pasangan" required>
         </label>
 
         <label for="txtpekerjaan"><span>Pekerjaan:</span>

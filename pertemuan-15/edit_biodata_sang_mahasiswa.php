@@ -9,10 +9,10 @@
 
   if (!$cid) {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
-    redirect_ke('index.php');
+    redirect_ke('edit_biodata_sang_mahasiswa.php');
   }
 
-  $stmt = mysqli_prepare($conn, "SELECT nim, nama_lengkap, tempat_lahir, tanggal_lahir, hobi, pasangan, pekerjaan, nama_orang_tua, nama_kakak, nama_adik, 
+  $stmt = mysqli_prepare($conn, "SELECT nim, nama_lengkap, tempat_lahir, tanggal_lahir, hobi, pasangan, pekerjaan, nama_orang_tua, nama_kakak, nama_adik
                                 FROM biodata_sang_mahasiswa
                                 WHERE cid = ? LIMIT 1");
                                      
@@ -30,7 +30,7 @@
 
   if (!$row) {
     $_SESSION['flash_error'] = 'Record tidak ditemukan.';
-    redirect_ke('read_biodata_sang_mahasiswa.php');
+    redirect_ke('edit_biodata_sang_mahasiswa.php');
   }
 
   #Nilai awal (prefill form)
@@ -101,51 +101,71 @@
           <input type="text" name="cid" value="<?= (int)$cid; ?>">
 
         <label for="txtNim"><span>NIM:</span>
-          <input type="text" id="txtNim" name="txtNim" placeholder="Masukkan NIM" required>
+          <input type="text" id="txtnim" name="txtnim"
+          value="<?= htmlspecialchars($nim); ?>"
+          placeholder="Masukkan NIM" required>
         </label>
 
         <label for="txtnama_lengkap"><span>Nama Lengkap:</span>
-          <input type="text" id="txtnama_lengkap" name="txtnama_lengkap" placeholder="Masukkan Nama Lengkap" required>
+          <input type="text" id="txtnama_lengkap" name="txtnama_lengkap"
+         value="<?= htmlspecialchars($nama_lengkap); ?>"
+         placeholder="Masukkan Nama Lengkap" required>
         </label>
 
         <label for="txttempat_lahir"><span>Tempat Lahir:</span>
-          <input type="text" id="txttempat_lahir" name="txttempat_lahir" placeholder="Masukkan Tempat Lahir" required>
+          <input type="text" id="txttempat_lahir" name="txttempat_lahir"
+         value="<?= htmlspecialchars($tempat_lahir); ?>"
+         placeholder="Masukkan Tempat Lahir" required>
         </label>
 
         <label for="txttanggal_lahir"><span>Tanggal Lahir:</span>
-          <input type="text" id="txttanggal_lahir" name="txttanggal_lahir" placeholder="Masukkan Tanggal Lahir" required>
+          <input type="text" id="txttanggal_lahir" name="txttanggal_lahir"
+         value="<?= htmlspecialchars($tanggal_lahir); ?>"
+         placeholder="Masukkan Tanggal Lahir" required>
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
-          <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi" required>
+          <input type="text" id="txthobi" name="txthobi"
+         value="<?= htmlspecialchars($hobi); ?>"
+         placeholder="Masukkan Hobi" required>
         </label>
 
         <label for="txtPasangan"><span>Pasangan:</span>
-          <input type="text" id="txtPasangan" name="txtPasangan" placeholder="Masukkan Pasangan" required>
+          <input type="text" id="txtpasangan" name="txtpasangan"
+         value="<?= htmlspecialchars($pasangan); ?>"
+         placeholder="Masukkan Pasangan" required>
         </label>
 
         <label for="txtpekerjaan"><span>Pekerjaan:</span>
-          <input type="text" id="txtpekerjaan" name="txtpekerjaan" placeholder="Masukkan Pekerjaan" required>
+          <input type="text" id="txtpekerjaan" name="txtpekerjaan"
+         value="<?= htmlspecialchars($pekerjaan); ?>"
+         placeholder="Masukkan Pekerjaan" required>
         </label>
 
         <label for="txtnama_orang_tua"><span>Nama Orang Tua:</span>
-          <input type="text" id="txtnama_orang_tua" name="txtnama_orang_tua" placeholder="Masukkan Nama Orang Tua" required>
+          <input type="text" id="txtnama_orang_tua" name="txtnama_orang_tua"
+         value="<?= htmlspecialchars($nama_orang_tua); ?>"
+         placeholder="Masukkan Nama Orang Tua" required>
         </label>
 
         <label for="txtnama_kakak"><span>Nama Kakak:</span>
-          <input type="text" id="txtnama_kakak" name="txtnama_kakak" placeholder="Masukkan Nama Kakak" required>
+          <input type="text" id="txtnama_kakak" name="txtnama_kakak"
+         value="<?= htmlspecialchars($nama_kakak); ?>"
+         placeholder="Masukkan Nama Kakak" required>
         </label>
 
         <label for="txtnama_adik"><span>Nama Adik:</span>
-          <input type="text" id="txtnama_adik" name="txtnama_adik" placeholder="Masukkan Nama Adik" required>
+          <input type="text" id="txtnama_adik" name="txtnama_adik"
+         value="<?= htmlspecialchars($nama_adik); ?>"
+         placeholder="Masukkan Nama Adik" required>
         </label>
 
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
-        <a href="read_biodata_sang_mahasiswa.php" class="reset">Kembali</a>
-      </form>
-    </section>
-    </main>
+    <button type="submit">Kirim</button>
+    <button type="reset">Batal</button>
+        <a href="edit_biodata_sang_mahasiswa.php" class="reset">Kembali</a>
+  </form>
+</section>
+</main>
 
     <script src="script.js"></script>
   </body>

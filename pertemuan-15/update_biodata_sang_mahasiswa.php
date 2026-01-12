@@ -34,9 +34,12 @@
   #Validasi sederhana
   $errors = [];
 
-  if ($nim === '') {
-    $errors[] = 'Nim wajib diisi.';
-  }
+    $nim = trim($_POST['nim'] ?? '');
+
+if ($nim === '') {
+    $errors['nim'] = 'Nim wajib diisi.';
+}
+
 
   if ($nama_lengkap === '') {
     $errors[] = 'Nama lengkap wajib diisi.';
@@ -137,7 +140,7 @@ if (!empty($errors)) {
 
  #menyiapkan query UPDATE dengan prepared statement 
   $stmt = mysqli_prepare($conn, "UPDATE biodata_sang_mahasiswa 
-                                SET nim = ?, nama_lengkap = ?, tempat_lahir = ?, tanggal_lahir = ?, hobi = ?, pasangan = ?, pekerjaan = ?, nama_orang_tua = ?, nama_kakak = ?, nama_adik = ?, 
+                                SET nim = ?, nama_lengkap = ?, tempat_lahir = ?, tanggal_lahir = ?, hobi = ?, pasangan = ?, pekerjaan = ?, nama_orang_tua = ?, nama_kakak = ?, nama_adik = ?
                                 WHERE cid = ?");
 
 if (!$stmt) {
@@ -147,14 +150,14 @@ if (!$stmt) {
   }
 
   #bind parameter dan eksekusi (s = string, i = integer)
-  mysqli_stmt_bind_param($stmt, "sssi", $nim, $nama_lengkap, $tempat_lahir, $tanggal_lahir, $hobi, $pasangan, $pekerjaan, $nama_orang_tua, $nama_kakak, $nama_adik, $cid);
+  mysqli_stmt_bind_param($stmt, "ssssssssssi", $nim, $nama_lengkap, $tempat_lahir, $tanggal_lahir, $hobi, $pasangan, $pekerjaan, $nama_orang_tua, $nama_kakak, $nama_adik, $cid);
 
   if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value
     unset($_SESSION['old']);
     /*Redirect balik ke read.php dan tampilkan info sukses.
     */
     $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diperbaharui.';
-    redirect_ke('read.php'); #pola PRG: kembali ke data dan exit()
+    redirect_ke('read_biodata_sang_mahasiswa.php'); #pola PRG: kembali ke data dan exit()
   } else {
     $_SESSION['old'] = [
     'nim'            => $nim,
