@@ -137,7 +137,7 @@ if (!empty($errors)) {
 
   $stmt = mysqli_prepare(
     $conn,
-    "UPDATE pengunjung
+    "UPDATE biodata_sang_pengunjung
      SET kode_pengunjung = ?,
          nama_pengunjung = ?,
          alamat_rumah = ?,
@@ -178,7 +178,7 @@ if (!empty($errors)) {
     unset($_SESSION['old']);
     
     $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah diperbaharui.';
-    redirect_ke('read.php'); #pola PRG: kembali ke data dan exit()
+    redirect_ke('read_biodata_sang_pengunjung.php'); #pola PRG: kembali ke data dan exit()
   } else { # jika gagal, simpan kembali old value dan tampilkan error umum
     $_SESSION['old'] = [
         'kode_pengunjung' => $kode_pengunjung,

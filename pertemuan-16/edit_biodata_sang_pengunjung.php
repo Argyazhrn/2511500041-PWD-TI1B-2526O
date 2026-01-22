@@ -47,8 +47,9 @@
   $flash_error = $_SESSION['flash_error'] ?? '';
   $old = $_SESSION['old'] ?? [];
   unset($_SESSION['flash_error'], $_SESSION['old']);
+  
   if (!empty($old)) {
-    $kode_pengunjung = $old['kode_pengunjung'] ?? '';
+  $kode_pengunjung   = $old['kode_pengunjung'] ?? '';
   $nama_pengunjung   = $old['nama_pengunjung'] ?? '';
   $alamat_rumah      = $old['alamat_rumah'] ?? '';
   $tanggal_kunjungan = $old['tanggal_kunjungan'] ?? '';
@@ -110,7 +111,7 @@
         </label>
 
         <label for="txtalamat_rumah"><span>Alamat Rumah:</span>
-          <input type="text" id="txtalamt_rumah" name="txtalamat_rumah"
+          <input type="text" id="txtalamat_rumah" name="txtalamat_rumah"
          value="<?= htmlspecialchars($alamat_rumah); ?>"
          placeholder="Masukkan Alamat Rumah" required>
         </label>
@@ -159,7 +160,7 @@
 
           <button type="submit">Kirim</button>
           <button type="reset">Batal</button>
-          <a href="read_biodata_sang_pengunjung.php" class="reset">Kembali</a>
+          <a href="edit_biodata_sang_pengunjung.php" class="reset">Kembali</a>
         </form>
       </section>
     </main>

@@ -8,4 +8,7 @@ nim 2511500041<br>
 <ol>
 <li>mengcopy bahan UAS ke pertemuan-16</li> 
 <li>membuat database di phpmyadmin dengan nama biodata_sang_pengunjung</li>
-<li>membuat file baru untuk melakukan validasi,sanitasi, konsep PRG, dan insert ke tabel baru</li> 
+<li>membuat file baru untuk melakukan validasi,sanitasi, konsep PRG, dan insert ke tabel baru</li>
+<li>menambahkan perintah validasi, sanitasi, konsep PRG, dan insert ke tabel baru</li>
+<li>menampilkan hasil record di file read_biodata_sang_mahasiswa<li>
+</ol>
