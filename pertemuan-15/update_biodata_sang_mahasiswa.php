@@ -34,8 +34,6 @@
   #Validasi sederhana
   $errors = [];
 
-    $nim = trim($_POST['nim'] ?? '');
-
 if ($nim === '') {
     $errors['nim'] = 'Nim wajib diisi.';
 }

@@ -102,8 +102,8 @@
 
         <label for="txtNim"><span>NIM:</span>
           <input type="text" id="txtnim" name="txtnim"
-          value="<?= htmlspecialchars($nim); ?>"
-          placeholder="Masukkan NIM" required>
+       value="<?= htmlspecialchars($nim); ?>"
+       placeholder="Masukkan NIM" required readonly>
         </label>
 
         <label for="txtnama_lengkap"><span>Nama Lengkap:</span>
