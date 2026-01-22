@@ -7,3 +7,4 @@ nim 2511500041<br>
 
 <ol>
 <li>mengcopy bahan UAS ke pertemuan-16</li> 
+<li>membuat database di phpmyadmin dengan nama biodata_sang_pengunjung</li> 

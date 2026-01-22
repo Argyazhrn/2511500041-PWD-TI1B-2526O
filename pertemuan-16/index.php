@@ -42,44 +42,44 @@ require_once __DIR__ . '/fungsi.php';
       <h2>Biodata Pengunjung</h2>
       <form action="proses.php" method="POST">
 
-        <label for="txtKodePen"><span>Kode Pengunjung:</span>
-          <input type="text" id="txtKodePen" name="txtKodePen" placeholder="Masukkan Kode Pengunjung" required>
+        <label for="txtkode_pengunjung"><span>Kode Pengunjung:</span>
+          <input type="text" id="txtkode_pengunjung" name="txtkode_pengunjung" placeholder="Masukkan Kode Pengunjung" required>
         </label>
 
-        <label for="txtNmPengunjung"><span>Nama Pengunjung:</span>
-          <input type="text" id="txtNmPengunjung" name="txtNmPengunjung" placeholder="Masukkan Nama Pengunjung" required>
+        <label for="txtnama_pengunjung"><span>Nama Pengunjung:</span>
+          <input type="text" id="txtnama_pengunjung" name="txtnama_pengunjung" placeholder="Masukkan Nama Pengunjung" required>
         </label>
 
-        <label for="txtAlRmh"><span>Alamat Rumah:</span>
-          <input type="text" id="txtAlRmh" name="txtAlRmh" placeholder="Masukkan Alamat Rumah" required>
+        <label for="txtalamat_rumah"><span>Alamat Rumah:</span>
+          <input type="text" id="txtalamat_rumah" name="txtalamat_rumah" placeholder="Masukkan Alamat Rumah" required>
         </label>
 
-        <label for="txtTglKunjungan"><span>Tanggal Kunjungan:</span>
-          <input type="text" id="txtTglKunjungan" name="txtTglKunjungan" placeholder="Masukkan Tanggal Kunjungan" required>
+        <label for="txttanggal_kunjungan"><span>Tanggal Kunjungan:</span>
+          <input type="text" id="txttanggal_kunjungan" name="txttanggal_kunjungan" placeholder="Masukkan Tanggal Kunjungan" required>
         </label>
 
         <label for="txtHobi"><span>Hobi:</span>
           <input type="text" id="txtHobi" name="txtHobi" placeholder="Masukkan Hobi" required>
         </label>
 
-        <label for="txtAsalSMA"><span>Asal SLTA:</span>
-          <input type="text" id="txtAsalSMA" name="txtAsalSMA" placeholder="Masukkan Asal SLTA" required>
+        <label for="txtasal_slta"><span>Asal SLTA:</span>
+          <input type="text" id="txtasal_slta" name="txtasal_slta" placeholder="Masukkan Asal SLTA" required>
         </label>
 
-        <label for="txtKerja"><span>Pekerjaan:</span>
-          <input type="text" id="txtKerja" name="txtKerja" placeholder="Masukkan Pekerjaan" required>
+        <label for="txtpekerjaan"><span>Pekerjaan:</span>
+          <input type="text" id="txtpekerjaan" name="txtpekerjaan" placeholder="Masukkan Pekerjaan" required>
         </label>
 
-        <label for="txtNmOrtu"><span>Nama Orang Tua:</span>
-          <input type="text" id="txtNmOrtu" name="txtNmOrtu" placeholder="Masukkan Nama Orang Tua" required>
+        <label for="txtnama_orang_tua"><span>Nama Orang Tua:</span>
+          <input type="text" id="txtnama_orang_tua" name="txtnama_orang_tua" placeholder="Masukkan Nama Orang Tua" required>
         </label>
 
-        <label for="txtNmPacar"><span>Nama Pacar:</span>
-          <input type="text" id="txtNmPacar" name="txtNmPacar" placeholder="Masukkan Nama Pacar" required>
+        <label for="txtnama_pacar"><span>Nama Pacar:</span>
+          <input type="text" id="txtnama_pacar" name="txtnama_pacar" placeholder="Masukkan Nama Pacar" required>
         </label>
 
-        <label for="txtNmMantan"><span>Nama Mantan:</span>
-          <input type="text" id="txtNmMantan" name="txtNmMantan" placeholder="Masukkan Nama Mantan" required>
+        <label for="txtnama_mantan"><span>Nama Mantan:</span>
+          <input type="text" id="txtnama_mantan" name="txtnama_mantan" placeholder="Masukkan Nama Mantan" required>
         </label>
 
         <button type="submit">Kirim</button>
